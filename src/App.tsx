@@ -1,9 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { 
-  Send, 
   Image as ImageIcon, 
   Smile, 
-  Trash2, 
   User, 
   Phone, 
   Video, 
