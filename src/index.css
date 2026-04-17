@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-wa-green: #00a884;
+  --color-wa-header: #075e54;
+  --color-wa-bg: #e5ddd5;
+  --color-wa-bubble-sent: #dcf8c6;
+  --color-wa-bubble-received: #ffffff;
+  --color-wa-sidebar: #ffffff;
+  --color-wa-border: #e9edef;
+  --color-wa-text-dark: #3b4a54;
+  --color-wa-text-light: #667781;
+}
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+}
