@@ -1,6 +1,6 @@
 {
   "name": "WhatsApp Chat Designer",
   "description": "Create and export WhatsApp-style chat dialogues with text, images, and emojis.",
-  "requestFramePermissions": ["microphone"],
+  "requestFramePermissions": [],
   "majorCapabilities": []
 }
