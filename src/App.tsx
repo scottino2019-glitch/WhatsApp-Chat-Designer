@@ -118,7 +118,7 @@ export default function App() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      senderId: 'p-dean',
+      senderId: 'p-kira',
       text: 'Ragazzi, ci siamo per giovedì alle 09:00 in biblioteca?',
       type: 'text',
       timestamp: '19:42',
