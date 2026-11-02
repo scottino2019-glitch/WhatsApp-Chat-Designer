@@ -55,11 +55,11 @@ const WA_COLORS = [
 ];
 
 const DEFAULT_AVATARS = [
-  'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
-  'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80',
-  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
-  'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80',
-  'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&auto=format&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1787841855274-5161c428cd1c?w=150&auto=format&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1740252117013-4fb21771e7ca?w=150&auto=format&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1740252117027-4275d3f84385?w=150&auto=format&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1740252117070-7aa2955b25f8?w=150&auto=format&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1728577740843-5f29c7586afe?w=150&auto=format&fit=crop&q=80',
 ];
 
 export default function App() {
@@ -67,14 +67,14 @@ export default function App() {
   const [chatType, setChatType] = useState<'single' | 'group'>('group');
   
   // Single Chat Details
-  const [singleContactName, setSingleContactName] = useState('Mario Rossi');
+  const [singleContactName, setSingleContactName] = useState('Kira Yu');
   const [singleContactStatus, setSingleContactStatus] = useState('online');
   const [singleContactAvatar, setSingleContactAvatar] = useState<string | null>(DEFAULT_AVATARS[0]);
   
   // Group Chat Details
-  const [groupName, setGroupName] = useState('Gruppo Calcetto ⚽🍕');
+  const [groupName, setGroupName] = useState('Gruppo Studio 🐼');
   const [groupAvatar, setGroupAvatar] = useState<string | null>(
-    'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=150&auto=format&fit=crop&q=80'
+    'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=150&auto=format&fit=crop&q=80'
   );
 
   // Avatar Display Setting
@@ -85,13 +85,13 @@ export default function App() {
     {
       id: 'p-me',
       name: 'Tu',
-      avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&auto=format&fit=crop&q=80',
+      avatar: 'https://images.unsplash.com/photo-1787841855274-5161c428cd1c?w=150&auto=format&fit=crop&q=80',
       color: '#075e54',
       isMe: true,
     },
     {
-      id: 'p-mario',
-      name: 'Mario',
+      id: 'p-dean',
+      name: 'Dean',
       avatar: DEFAULT_AVATARS[0],
       color: '#1f7aec',
       isMe: false,
@@ -118,8 +118,8 @@ export default function App() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      senderId: 'p-mario',
-      text: 'Ragazzi, ci siamo per giovedì alle 20:00 al campo?',
+      senderId: 'p-dean',
+      text: 'Ragazzi, ci siamo per giovedì alle 09:00 in biblioteca?',
       type: 'text',
       timestamp: '19:42',
       status: 'read'
@@ -127,7 +127,7 @@ export default function App() {
     {
       id: '2',
       senderId: 'p-laura',
-      text: 'Io porto le maglie e i palloni!',
+      text: 'Io porto gli appunti della prof!',
       type: 'text',
       timestamp: '19:43',
       status: 'read'
@@ -135,7 +135,7 @@ export default function App() {
     {
       id: '3',
       senderId: 'p-me',
-      text: 'Perfetto, ho appena confermato la prenotazione!',
+      text: 'Perfetto, ho appena riordinato i miei appunti!',
       type: 'text',
       timestamp: '19:44',
       status: 'read'
